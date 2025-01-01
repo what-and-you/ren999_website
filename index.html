@@ -3,12 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio pribadi Ren Store, seorang developer yang ahli dalam pengembangan aplikasi dan web.">
-    <meta name="keywords" content="Ren Store, developer, portfolio, web development, aplikasi, proyek, freelance">
-    <meta name="author" content="Ren Store">
-    <title>Ren Store | Portfolio</title>
+    <meta name="description" content="Portfolio pribadi Ren9999, seorang developer yang ahli dalam pengembangan aplikasi dan web.">
+    <meta name="keywords" content="Ren9999, developer, portfolio, web development, aplikasi, proyek, freelance">
+    <meta name="author" content="Ren9999">
+    <meta property="og:title" content="Ren9999 | Portfolio">
+    <meta property="og:description" content="Portfolio pribadi Ren9999, seorang developer aplikasi dan web. Lihat beberapa proyek yang saya kerjakan.">
+    <meta property="og:image" content="your-image-url.jpg">
+    <meta property="og:url" content="https://your-website-url.com">
+    <title>Ren9999 | Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-XXXXXXXXX-X');
+    </script>
+
 </head>
 <body>
 
@@ -27,7 +44,7 @@
     <section class="hero">
         <div class="hero-content">
             <h1>Selamat Datang di Portfolio Saya</h1>
-            <p>Nama saya Ren Store, seorang developer web dan aplikasi. Lihat beberapa proyek yang saya kerjakan di bawah ini.</p>
+            <p>Nama saya Ren9999, seorang developer web dan aplikasi. Lihat beberapa proyek yang saya kerjakan di bawah ini.</p>
             <a href="#projects" class="btn-primary">Lihat Proyek</a>
         </div>
     </section>
@@ -60,13 +77,32 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <h2>Kontak Saya</h2>
-        <p>Email: <a href="mailto:ren.store@email.com">ren.store@email.com</a></p>
+        <p>Email: <a href="mailto:ren9999@email.com">ren9999@email.com</a></p>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Ren Store. All Rights Reserved.</p>
+        <p>&copy; 2025 Ren9999. All Rights Reserved.</p>
     </footer>
 
+    <!-- JavaScript -->
+    <script>
+        // Smooth scrolling effect for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Animating the hero content on load
+        window.addEventListener('load', () => {
+            const heroContent = document.querySelector('.hero-content');
+            heroContent.classList.add('fade-in');
+        });
+    </script>
+
 </body>
-  </html>
+</html>
